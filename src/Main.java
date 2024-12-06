@@ -1,10 +1,20 @@
 //TIP 要<b>运行</b>代码，请按 <shortcut actionId="Run"/> 或
 // 点击装订区域中的 <icon src="AllIcons.Actions.Execute"/> 图标。
+
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        int randomNumber = (int) (Math.random() * 101); // 0 ~ 100 包括 100
-        System.out.println("随机数是: " + randomNumber);
+        int[] hot100 = {1, 49, 128, 283, 11, 15, 42, 3, 438, 560, 239, 76, 53, 56, 189, 238, 41, 73, 54,
+                48, 240, 160, 206, 234, 141, 142, 21, 2, 19, 24, 25, 138, 148, 23, 146, 94, 104, 226, 101, 543, 102,
+                108, 98, 230, 199, 114, 105, 437, 236, 124, 200, 994, 207, 208, 46, 78, 17, 39, 22, 79, 131, 51, 35,
+                74, 34, 33, 153, 4, 20, 155, 394, 739, 84, 215, 347, 295, 121, 55, 45, 763, 70, 118, 198, 279, 322, 139,
+                300, 152, 416, 32, 62, 64, 5, 1143, 72, 136, 169,75, 31, 287};
+        Random random = new Random();
+
+        // 从数组中随机选取一个索引
+        System.out.println(hot100[random.nextInt(hot100.length)]);
+
+
     }
 }
