@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class FirstMissingPositive_41 {
     //返回缺失的一个个正数，O(n)，常数级额外空间
     //缺失的数肯定属于[1,n+1],可利用数组下标辅助
@@ -6,7 +7,20 @@ public class FirstMissingPositive_41 {
     哈希函数的规则特别简单，那就是数值为 i 的数映射到下标为 i - 1 的位置
 */
     public static int firstMissingPositive(int[] nums){
-        //todo
-        return 3;
+        int n = nums.length;
+        int[] mark = new int[n+1];
+        Arrays.fill(mark,1);
+        for(int i : nums){
+            if(i>=1 && i <=n+1){
+                mark[i-1] = -1;
+            }
+        }
+        for(int i =0;i<n+1;i++){
+            if(mark[i] == 1){
+                return i+1;
+            }
+        }
+        return -1;
     }
+
 }
