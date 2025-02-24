@@ -10,6 +10,6 @@ public class Test_128_LongestConsecutive {
     @Test
     public void test1(){
         int[] nums = {0,3,7,2,5,4,6,0,1};
-        assertEquals(9,LongestConsecutive_128.longestConsecutive(nums));
+        assertEquals(8,LongestConsecutive_128.longestConsecutive(nums));
     }
 }
