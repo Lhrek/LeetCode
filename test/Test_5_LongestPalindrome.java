@@ -7,6 +7,7 @@ public class Test_5_LongestPalindrome {
         String s = "cbbd";
         assertEquals("bb",LongestPalindrome_5.longestPalindrome(s));
     }
+    @Test
     public void test(){
         String s = "bcabacd";
         assertEquals("cabac",LongestPalindrome_5.longestPalindrome(s));
