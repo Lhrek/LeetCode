@@ -1,8 +1,8 @@
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-
-public class Test_146_LRUCache {
-    @Test
+//import org.junit.Test;
+//import static org.junit.Assert.assertEquals;
+//
+//public class Test_146_LRUCache {
+//    @Test
 //    public void test()
 //    {
 //        LRUCache_146 lRUCache = new LRUCache_146(2);
@@ -17,5 +17,5 @@ public class Test_146_LRUCache {
 //        assertEquals(4, lRUCache.get(4));
 //        assertEquals(2, lRUCache.get(2));
 //    }
-
-}
+//
+//}
