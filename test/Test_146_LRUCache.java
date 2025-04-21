@@ -2,7 +2,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class Test_146_LRUCache {
-//    @Test
+    @Test
 //    public void test()
 //    {
 //        LRUCache_146 lRUCache = new LRUCache_146(2);
